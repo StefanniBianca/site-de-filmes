@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=IM+Fell+English+SC&display=swap');
+* {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color:#00000F;
+    font-size: 1.6rem;
+}
+
+header {
+    z-index: 1;
+    background-color:#ffffff;
+    color: black;
+    width: 100%;
+    
+}
+
+.cont {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    color: black;
+    text-align: left;
+    padding: 15px;
+    color:#ffffff;
+}
+
+.mia {
+    height: 400px;
+    width: 100%;
+   
+}
+
+.elenco {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+}
+
+main {
+    color: #ffffff;
+}
+
+.para {
+    padding: 20px;
+} 
+
+ul  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2, h1 {
+    text-align: left;
+    font-size: 45px;
+    padding-left: 33px;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+nav {
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+}
+.logo {
+    float: left;
+    display: block;
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+.logo2 {
+    float: right;
+    display: block;
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+nav a {
+    float: left;
+    align-items: center;
+    display: block;
+    padding: 35px 35px;
+    color: black;
+
+}
+
+nav a:hover {
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5%;
+}
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.typing-animation {
+    animation: help 4s steps(50) 1s normal infinite both;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes help {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18em;
+    }
+}
+p {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+@media (max-width: 430px)  {
+    .typing-animation {
+        font-size: 25px;
+    }
+}
+@media (max-width: 440px) {
+
+   
+    nav {
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        z-index: 1;
+
+        transition-duration: 0.3s;
+    }
+    .menu2 {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+
+    .menu.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu.on nav {
+        display: block;
+    }
+
+    .menu.on .menu2 {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .menu.on .menu2 .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: black;
+    }
+    .menu.on .menu2 .two {
+       opacity: 0;
+    }
+    .menu.on .menu2 .three {
+        transform: rotate(-45deg) translate(8px, -7px);
+        background-color: black;
+    }
+    .menu.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    .menu.on nav li a {
+        transition-duration: 0.5s;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        line-height: 4rem;
+    }
+
+}

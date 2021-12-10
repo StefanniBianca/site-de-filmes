@@ -1,0 +1,48 @@
+
+    <header>
+<ul>
+    <img src="imagem/logun.png" alt="" height="70px" width="65px">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Recomendados</a></li>
+    <li><a href="#">Minha lista</a></li>
+    <div id="help">
+        <img src="imagem/icone pesquisa.png" alt="" height="30px" width="25px">
+        <img src="imagem/icone sino.png" alt="" height="30px" width="25px">
+    </div>
+  
+</ul>
+    </header>
+
+CSS ---------------------------------------------
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+header {
+    justify-content: space-around;
+    background-color: #bd7a23e8;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0%;
+   }
+
+
+
+header a {
+    display: block;
+    padding: 35px 25px;
+    text-decoration: none;
+}
+
+#help {
+   padding: 30px 40px 30px 40px;
+}
+
+   

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=IM+Fell+English+SC&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+nav {
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+}
+.logo {
+    float: left;
+    display: block;
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+.logo2 {
+    float: right;
+    display: block;
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+nav a {
+    float: left;
+    align-items: center;
+    display: block;
+    padding: 35px 47px;
+    color: black;
+
+}
+
+nav a:hover {
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5%;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: ghostwhite;
+    font-size: 1.6rem;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    color: ghostwhite;
+    text-align: center;
+    padding: 20px;
+    grid-gap: 40px ;
+    text-align: center;
+    margin: auto;
+}
+
+
+.prinimg {
+    width: 220px;
+    height: 220px;
+}
+.idk {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+.imgsegund {
+    width: 215px;
+    height: 130px;
+    border-radius: 7%;
+}
+
+.imgsegund:hover {
+    width: 240px;
+    height: 145px;
+    border: solid 3px #fff;
+}
+
+
+ul {
+   list-style: none;
+   display: grid;
+   text-align: center;
+   padding: 10px;
+}
+summary {
+    cursor: pointer;
+    transition: 5s;
+}
+footer {
+    background-color: #fff;
+    color: black;
+}
+@media (max-width: 460px) {
+    nav {
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+    .menu2 {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+        
+    }
+
+
+    .menu.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu.on nav {
+        display: block;
+    }
+
+    .menu.on .menu2 {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .menu.on .menu2 .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: black;
+    }
+    .menu.on .menu2 .two {
+       opacity: 0;
+    }
+    .menu.on .menu2 .three {
+        transform: rotate(-45deg) translate(8px, -7px);
+        background-color: black;
+    }
+    .menu.on nav li {
+        text-align: center;
+        display: block;
+    }
+    .menu.on nav li a {
+        transition-duration: 0.5s;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        line-height: 4rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
